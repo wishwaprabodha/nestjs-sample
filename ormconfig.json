@@ -2,14 +2,12 @@
     "type": "mysql",
     "host": "localhost",
     "username": "root",
-    "password": "root",
+    "password": "password",
     "database": "testDB",
-    "socketPath": "/var/run/mysqld/mysqld.sock",
-    "synchronize": false,
+    "port": 3306,
+    "synchronize": true,
     "logging": false,
-    "entities": [
-       "src/entity/**/*.ts"
-    ],
+    "entities": ["dist/**/*.entity{.ts,.js}"],
     "migrations": [
        "src/migration/**/*.ts"
     ],
