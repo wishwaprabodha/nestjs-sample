@@ -1,0 +1,19 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "username": "root",
+    "password": "root",
+    "database": "testDB",
+    "socketPath": "/var/run/mysqld/mysqld.sock",
+    "synchronize": false,
+    "logging": false,
+    "entities": [
+       "src/entity/**/*.ts"
+    ],
+    "migrations": [
+       "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+       "src/subscriber/**/*.ts"
+    ]
+ }
